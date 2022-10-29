@@ -1,0 +1,74 @@
+
+<script type="text/x-mathjax-config">MathJax.Hub.Config({
+  config: ["MMLorHTML.js"],
+  jax: ["input/TeX","input/MathML","output/HTML-CSS","output/NativeMML"],
+  extensions: ["tex2jax.js","mml2jax.js","MathMenu.js","MathZoom.js"],
+  TeX: {
+    extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+  }
+});</script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<style>
+.x {
+  background-color: lightgrey;
+  border: 10px solid green;
+}
+.y {
+  background-color: lightyellow;
+  border: 5px solid black;
+}
+.z {
+  background-color: lightpink;
+  border: 5px solid red;
+}
+.tele {
+  background-color: yellow;
+  border: 5px solid red;
+}
+</style>
+<a href="http://t.me/vipsolve"><div class=tele><center><h3>CLICK HERE TO GET MORE FREE SOLUTIONS</h3></center></div></a>
+<div class="x">
+<p><img alt="Non-overlapping Subtrees!
+Problem Description
+You are given a rooted tree with \( \mathbf{N} \) vertices labelled from \( \ma" src="https://media.cheggcdn.com/media/31b/31b2c0a6-2f15-4324-9c22-512a6048849e/phpmlexVp"><br>
+
+Please give C++ code asap</p>
+</div></div></div></div></div><h3><p><b>
+<mark>:: Solution ::</mark>
+</b></p></h3><div class="y"><h3><p><b>
+<mark>step: 1</mark>
+</b></p></h3><html><head><style data-styled="true" data-styled-version="5.3.5">.gkwtCW{margin:0;font-family:"Aspira Webfont","Helvetica","Arial",sans-serif;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;gap:16px;}/*!sc*/
+data-styled.g364[id="sc-z3f5s1-0"]{content:"gkwtCW,"}/*!sc*/
+.iIwMoS{white-space:pre-wrap;}/*!sc*/
+data-styled.g366[id="sc-1aslxm9-0"]{content:"iIwMoS,"}/*!sc*/
+.fzJtOB{text-align:start;}/*!sc*/
+data-styled.g368[id="sc-1aslxm9-2"]{content:"fzJtOB,"}/*!sc*/
+.hOZehF{margin:0;font-family:"Aspira Webfont","Helvetica","Arial",sans-serif;}/*!sc*/
+data-styled.g395[id="sc-9wsboo-0"]{content:"hOZehF,"}/*!sc*/
+.lhIoTe{margin:0;font-size:1rem;}/*!sc*/
+data-styled.g397[id="sc-1swtczx-0"]{content:"lhIoTe,"}/*!sc*/
+.iHelzO{margin:0;font-family:"Aspira Webfont","Helvetica","Arial",sans-serif;line-height:normal;}/*!sc*/
+data-styled.g428[id="sc-1sugbjn-0"]{content:"iHelzO,"}/*!sc*/
+</style></head><body><div class="sc-1sugbjn-1 fnYWeX"><div class="sc-1sugbjn-2 fJzpFM"><h3 id="step-1-of-2" class="sc-1sugbjn-3 gSoZud"></h3><div><div class="sc-z3f5s1-0 gkwtCW" data-test="blocks"><div class="sc-z3f5s1-1 dCjZEh"><div class="sc-1swtczx-0 lhIoTe" data-test="block-0"><div class="sc-9wsboo-0 hOZehF"><div class="sc-1aslxm9-0 iIwMoS"><div class="sc-1aslxm9-2 fzJtOB">vector&lt;int&gt; tree;</div><div class="sc-1aslxm9-2 fzJtOB">int maxXor(int root){</div><div class="sc-1aslxm9-2 fzJtOB">int max_val = 0;</div><div class="sc-1aslxm9-2 fzJtOB">for(int i=0; i&lt;tree.size(); i++){</div><div class="sc-1aslxm9-2 fzJtOB">if(tree[i] != root &amp;&amp; (tree[i]^root) &gt; max_val){</div><div class="sc-1aslxm9-2 fzJtOB">max_val = tree[i]^root;</div><div class="sc-1aslxm9-2 fzJtOB">}</div><div class="sc-1aslxm9-2 fzJtOB">}</div><div class="sc-1aslxm9-2 fzJtOB">return max_val;</div><div class="sc-1aslxm9-2 fzJtOB">}</div><div class="sc-1aslxm9-2 fzJtOB">int findMaxXorSubtrees(int root, vector&lt;int&gt; A) {</div><div class="sc-1aslxm9-2 fzJtOB">// Write your code here</div><div class="sc-1aslxm9-2 fzJtOB">tree = A;</div><div class="sc-1aslxm9-2 fzJtOB">int max_val = 0;</div><div class="sc-1aslxm9-2 fzJtOB">for(int i=0; i&lt;tree.size(); i++){</div><div class="sc-1aslxm9-2 fzJtOB">int curr_xor = maxXor(tree[i]);</div><div class="sc-1aslxm9-2 fzJtOB">if(curr_xor &gt; max_val){</div><div class="sc-1aslxm9-2 fzJtOB">max_val = curr_xor;</div><div class="sc-1aslxm9-2 fzJtOB">}</div><div class="sc-1aslxm9-2 fzJtOB">}</div><div class="sc-1aslxm9-2 fzJtOB">return max_val;</div><div class="sc-1aslxm9-2 fzJtOB">}</div></div></div></div></div></div></div></div></div></body></html><h3><p><b>
+<mark>Explanaton</mark>
+</b></p></h3>Please refer to solution in this step.<h3><p><b>
+<mark>step: 2</mark>
+</b></p></h3><html><head><style data-styled="true" data-styled-version="5.3.5">.gkwtCW{margin:0;font-family:"Aspira Webfont","Helvetica","Arial",sans-serif;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;gap:16px;}/*!sc*/
+data-styled.g364[id="sc-z3f5s1-0"]{content:"gkwtCW,"}/*!sc*/
+.iIwMoS{white-space:pre-wrap;}/*!sc*/
+data-styled.g366[id="sc-1aslxm9-0"]{content:"iIwMoS,"}/*!sc*/
+.fzJtOB{text-align:start;}/*!sc*/
+data-styled.g368[id="sc-1aslxm9-2"]{content:"fzJtOB,"}/*!sc*/
+.hOZehF{margin:0;font-family:"Aspira Webfont","Helvetica","Arial",sans-serif;}/*!sc*/
+data-styled.g395[id="sc-9wsboo-0"]{content:"hOZehF,"}/*!sc*/
+.lhIoTe{margin:0;font-size:1rem;}/*!sc*/
+data-styled.g397[id="sc-1swtczx-0"]{content:"lhIoTe,"}/*!sc*/
+.iHelzO{margin:0;font-family:"Aspira Webfont","Helvetica","Arial",sans-serif;line-height:normal;}/*!sc*/
+data-styled.g428[id="sc-1sugbjn-0"]{content:"iHelzO,"}/*!sc*/
+</style></head><body><div class="sc-1sugbjn-1 fnYWeX"><div class="sc-1sugbjn-2 fJzpFM"><h3 id="step-2-of-2" class="sc-1sugbjn-3 gSoZud"></h3><div><div class="sc-z3f5s1-0 gkwtCW" data-test="blocks"><div class="sc-z3f5s1-1 dCjZEh"><div class="sc-1swtczx-0 lhIoTe" data-test="block-0"><div class="sc-9wsboo-0 hOZehF"><div class="sc-1aslxm9-0 iIwMoS"><div class="sc-1aslxm9-2 fzJtOB">The code above finds the two non-overlapping subtrees in a given rooted tree such that the bitwise XOR of their subtree sums is maximum. The tree is represented by an array with the root at index 1. The function maxXor takes in a root vertex and returns the maximum XOR of the subtree sum of that vertex with any other vertex in the tree. The function findMaxXorSubtrees then iterates through all the vertices in the tree and calls maxXor on each one, returning the maximum XOR value found.</div><div class="sc-1aslxm9-2 fzJtOB">This particular strategy has a temporal complexity of O(n2n is the number of tree vertices. Reason being that the maxXor function takes O(n) time to find the maximum XOR value for a given root, and this needs to be done for every vertex in the tree. The space complexity is O(n), since we need to store the entire tree in memory.</div><div class="sc-1aslxm9-2 fzJtOB">One potential optimization to this algorithm would be to pre-compute the XOR values for all pairs of vertices in the tree, and then just lookup the maximum XOR value for a given root instead of recalculating it every time. This would reduce the time complexity to O(n), but would increase the space complexity to O(n^2).</div><h5 class="sc-1aslxm9-11 fcWYwT"><br class="sc-1aslxm9-1 ggZWeK"></h5></div></div></div></div></div></div></div></div></body></html><h3><p><b>
+<mark>Explanaton</mark>
+</b></p></h3>Please refer to solution in this step.<h3><p><b>
+<mark>Final Answer</mark>
+</b></p></h3><html><head></head><body><div id="final-answer" class="sc-fh7n12-0 hJpEJY"><div><div class="sc-z3f5s1-0 gkwtCW" data-test="blocks"><div class="sc-z3f5s1-1 dCjZEh"><div class="sc-1swtczx-0 lhIoTe" data-test="block-0"><div class="sc-9wsboo-0 hOZehF"><div class="sc-1aslxm9-0 iIwMoS"><div class="sc-1aslxm9-2 fzJtOB">Answer is given above........</div></div></div></div></div></div></div></div></body></html><div class="z"><h2><p><b>
+Likes: 0</p><p>Dislikes:  0
+</b></p></h2></div>
